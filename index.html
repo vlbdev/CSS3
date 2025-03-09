@@ -7,7 +7,20 @@
     <base href="https://www.w3schools.com/cssref/" />
     <style>
       nav ul {
-        display: flex; list-style-type: none; gap:30px;
+        display: flex;
+        list-style-type: none;
+        gap: 30px;
+      }
+      table {
+        border-collapse: collapse;
+      }
+      td {
+        border: 1px solid #ddd;
+        vertical-align: top;
+      }
+      td span {
+        position: sticky;
+        top: 0;
       }
     </style>
   </head>
@@ -25,5 +38,75 @@
         <li><a href=""></a></li>
       </ul>
     </nav>
+    <table>
+      <colgroup>
+        <col style="width: 120px" />
+        <col style="width: 230px" />
+        <col style="width: 320px" />
+        <col style="width: auto; min-width: 200px" />
+      </colgroup>
+      <tbody>
+        <tr>
+          <td rowspan="10"><span>Animation</span></td>
+        </tr>
+        <tr>
+          <td><a href="https://www.w3schools.com/cssref/css3_pr_animation.php">animation</a></td>
+          <td>A shorthand property for all the animation-* properties</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.w3schools.com/cssref/css3_pr_animation-delay.php">animation-delay</a></td>
+          <td>Specifies a delay for the start of an animation</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.w3schools.com/cssref/css3_pr_animation-direction.php">animation-direction</a></td>
+          <td>Specifies whether an animation should be played forward, backward or in alternate cycles</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.w3schools.com/cssref/css3_pr_animation-duration.php">animation-duration</a></td>
+          <td>Specifies how long an animation should take to complete one cycle</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.w3schools.com/cssref/css3_pr_animation-fill-mode.php">animation-fill-mode</a></td>
+          <td>
+            Specifies a style for the element when the animation is not playing (before it starts, after it ends, or
+            both)
+          </td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://www.w3schools.com/cssref/css3_pr_animation-iteration-count.php"
+              >animation-iteration-count</a
+            >
+          </td>
+          <td>Specifies the number of times an animation should be played</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.w3schools.com/cssref/css3_pr_animation-name.php">animation-name</a></td>
+          <td>Specifies a name for the @keyframes animation</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.w3schools.com/cssref/css3_pr_animation-play-state.php">animation-play-state</a></td>
+          <td>Specifies whether the animation is running or paused</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://www.w3schools.com/cssref/css3_pr_animation-timing-function.php"
+              >animation-timing-function</a
+            >
+          </td>
+          <td>Specifies the speed curve of an animation</td>
+          <td>&nbsp;</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>&nbsp;</p>
   </body>
 </html>
