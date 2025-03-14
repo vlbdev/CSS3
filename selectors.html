@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <table class="ws-table-all notranslate">
+      <tbody>
+        <tr>
+          <th style="width: 20%">Selector</th>
+          <th style="width: 20%">Example</th>
+          <th>Example description</th>
+        </tr>
+        <tr>
+          <td>
+            <i><a href="sel_element.php">element</a></i>
+          </td>
+          <td class="notranslate">p</td>
+          <td>Selects all &lt;p&gt; elements</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="sel_id.php">#<i>id</i></a>
+          </td>
+          <td class="notranslate">#firstname</td>
+          <td>Selects the element with id="firstname"</td>
+        </tr>
+        <tr>
+          <td><a href="sel_all.php">*</a></td>
+          <td class="notranslate">*</td>
+          <td>Selects all elements</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="sel_class.php">.<i>class</i></a>
+          </td>
+          <td class="notranslate">.intro<br />p.intro</td>
+          <td>Selects all elements with class="intro"<br />Selects all &lt;p&gt; elements with class="intro"</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table class="ws-table-all notranslate">
+      <tbody>
+        <tr>
+          <th style="width: 20%">Selector</th>
+          <th style="width: 20%">Example</th>
+          <th>Example description</th>
+        </tr>
+        <tr>
+          <td><a href="sel_attribute.php">[<i>attribute</i>]</a></td>
+          <td class="notranslate">[lang]</td>
+          <td>Selects all elements with a lang attribute</td>
+        </tr>
+        <tr>
+          <td><a href="sel_attribute_value.php">[<i>attribute</i>=<i>value</i>]</a></td>
+          <td class="notranslate">[lang="it"]</td>
+          <td>Selects all elements with lang="it"</td>
+        </tr>
+        <tr>
+          <td><a href="sel_attribute_value_contains.php">[<i>attribute</i>~=<i>value</i>]</a></td>
+          <td class="notranslate">[title~="flower"]</td>
+          <td>Selects all elements with a title attribute containing the word "flower"</td>
+        </tr>
+        <tr>
+          <td><a href="sel_attribute_value_lang.php">[<i>attribute</i>|=<i>value</i>]</a></td>
+          <td class="notranslate">[lang|="en"]</td>
+          <td>Selects all elements with a lang attribute value equal to "en" or starting with "en-"</td>
+        </tr>
+        <tr>
+          <td><a href="sel_attr_begin.php">[<i>attribute</i>^=<i>value</i>]</a></td>
+          <td>[href^="https"]</td>
+          <td>Selects all elements with a href attribute value that begins with "https"</td>
+        </tr>
+        <tr>
+          <td><a href="sel_attr_end.php">[<i>attribute</i>$=<i>value</i>]</a></td>
+          <td>[href$=".pdf"]</td>
+          <td>Selects all elements with a href attribute value ends with ".pdf"</td>
+        </tr>
+        <tr>
+          <td><a href="sel_attr_contain.php">[<i>attribute</i>*=<i>value</i>]</a></td>
+          <td>[href*="w3schools"]</td>
+          <td>Selects all elements with a href attribute value containing the substring "w3schools"</td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="ws-table-all notranslate">
+      <tbody>
+        <tr>
+          <th style="width: 32%">Name</th>
+          <th style="width: 15%">Sign</th>
+          <th style="width: 13%">Example</th>
+          <th>Example Result</th>
+        </tr>
+        <tr>
+          <td><a href="sel_element_gt.php">Child combinator</a></td>
+          <td>&gt;</td>
+          <td class="notranslate">div &gt; p</td>
+          <td>Selects every &lt;p&gt; element that are direct children of a &lt;div&gt; element</td>
+        </tr>
+        <tr>
+          <td><a href="sel_element_element.php">Descendant combinator</a></td>
+          <td>(single space)</td>
+          <td class="notranslate">div p</td>
+          <td>Selects all &lt;p&gt; elements inside &lt;div&gt; elements</td>
+        </tr>
+        <tr>
+          <td>Namespace separator</td>
+          <td>|</td>
+          <td class="notranslate">ns | h2</td>
+          <td>Selects all &lt;h2&gt; elements in namespace ns</td>
+        </tr>
+        <tr>
+          <td><a href="sel_element_pluss.php">Next-sibling combinator</a></td>
+          <td>+</td>
+          <td class="notranslate">div + p</td>
+          <td>Selects the first &lt;p&gt; element that is placed immediately after &lt;div&gt; elements</td>
+        </tr>
+        <tr>
+          <td><a href="sel_element_comma.php">Selector list</a></td>
+          <td>,</td>
+          <td>div, p</td>
+          <td>Selects all &lt;div&gt; elements and all &lt;p&gt; elements</td>
+        </tr>
+        <tr>
+          <td><a href="sel_gen_sibling.php">Subsequent-sibling combinator</a></td>
+          <td>~</td>
+          <td>p ~ ul</td>
+          <td>Selects all &lt;ul&gt; elements that are preceded by a &lt;p&gt; element</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
