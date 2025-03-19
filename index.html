@@ -113,32 +113,93 @@
         <tr>
           <td><a href="https://www.w3schools.com/cssref/css3_pr_background.php">background</a></td>
           <td>A shorthand property for all the background-* properties</td>
-          <td>background: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit;</td>
+          <td>
+            background: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit;
+          </td>
         </tr>
         <tr>
           <td><a href="https://www.w3schools.com/cssref/pr_background-attachment.php">background-attachment</a></td>
           <td>Sets whether a background image scrolls with the rest of the page, or is fixed</td>
-          <td>&nbsp;</td>
+          <td>background-attachment: scroll|fixed|local|initial|inherit;</td>
         </tr>
         <tr>
           <td><a href="https://www.w3schools.com/cssref/pr_background-blend-mode.php">background-blend-mode</a></td>
           <td>Specifies the blending mode of each background layer (color/image)</td>
-          <td>&nbsp;</td>
+          <td>
+            background-blend-mode:
+            normal|multiply|screen|overlay|darken|lighten|color-dodge|saturation|color|luminosity;
+          </td>
         </tr>
         <tr>
           <td><a href="https://www.w3schools.com/cssref/css3_pr_background-clip.php">background-clip</a></td>
           <td>Defines how far the background (color or image) should extend within an element</td>
-          <td>&nbsp;</td>
+          <td>background-clip: border-box|padding-box|content-box|initial|inherit;</td>
         </tr>
         <tr>
           <td><a href="https://www.w3schools.com/cssref/pr_background-color.php">background-color</a></td>
           <td>Specifies the background color of an element</td>
-          <td>&nbsp;</td>
+          <td>background-color: color|transparent|initial|inherit;</td>
         </tr>
         <tr>
           <td><a href="https://www.w3schools.com/cssref/pr_background-image.php">background-image</a></td>
           <td>Specifies one or more background images for an element</td>
-          <td>&nbsp;</td>
+          <td>
+            background-image: url|none|initial|inherit;
+            <table class="ws-table-all notranslate">
+              <tbody>
+                <tr>
+                  <th>Value</th>
+                  <th>Description</th>
+                </tr>
+                <tr>
+                  <td><a href="func_url.php">url()</a></td>
+                  <td>The URL to the image. To specify more than one image, separate the URLs with a comma</td>
+                </tr>
+                <tr>
+                  <td>none</td>
+                  <td>No background image will be displayed. This is default</td>
+                </tr>
+                <tr>
+                  <td><a href="func_conic-gradient.php">conic-gradient()</a></td>
+                  <td>Sets a conic gradient as the background image. Define at least two colors</td>
+                </tr>
+                <tr>
+                  <td><a href="func_linear-gradient.php">linear-gradient()</a></td>
+                  <td>Sets a linear gradient as the background image. Define at least two colors (top to bottom)</td>
+                </tr>
+                <tr>
+                  <td><a href="func_radial-gradient.php">radial-gradient()</a></td>
+                  <td>Sets a radial gradient as the background image. Define at least two colors (center to edges)</td>
+                </tr>
+                <tr>
+                  <td><a href="func_repeating-conic-gradient.php">repeating-conic-gradient()</a></td>
+                  <td>Repeats a conic gradient</td>
+                </tr>
+                <tr>
+                  <td><a href="func_repeating-linear-gradient.php">repeating-linear-gradient()</a></td>
+                  <td>Repeats a linear gradient</td>
+                </tr>
+                <tr>
+                  <td><a href="func_repeating-radial-gradient.php">repeating-radial-gradient()</a></td>
+                  <td>Repeats a radial gradient</td>
+                </tr>
+                <tr>
+                  <td>initial</td>
+                  <td>
+                    Sets this property to its default value. <a href="css_initial.php">Read about <em>initial</em></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>inherit</td>
+                  <td>
+                    Inherits this property from its parent element.
+                    <a href="css_inherit.php">Read about <em>inherit</em></a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <p>&nbsp;</p>
+          </td>
         </tr>
         <tr>
           <td><a href="https://www.w3schools.com/cssref/css3_pr_background-origin.php">background-origin</a></td>
