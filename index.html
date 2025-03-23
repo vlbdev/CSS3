@@ -1172,42 +1172,42 @@
         <tr>
           <td><a href="https://www.w3schools.com/cssref/css3_pr_flex.php">flex</a></td>
           <td>A shorthand property for the flex-grow, flex-shrink, and the flex-basis properties</td>
-          <td>&nbsp;</td>
+          <td>flex: flex-grow flex-shrink flex-basis|auto(1 1 auto)|none(0 0 auto)|initial|inherit;</td>
         </tr>
         <tr>
           <td><a href="https://www.w3schools.com/cssref/css3_pr_flex-basis.php">flex-basis</a></td>
           <td>Specifies the initial length of a flexible item</td>
-          <td>&nbsp;</td>
+          <td>flex-basis: number|auto|initial|inherit;</td>
         </tr>
         <tr>
           <td><a href="https://www.w3schools.com/cssref/css3_pr_flex-direction.php">flex-direction</a></td>
           <td>Specifies the direction of the flexible items</td>
-          <td>&nbsp;</td>
+          <td>flex-direction: row|row-reverse|column|column-reverse|initial|inherit;</td>
         </tr>
         <tr>
           <td><a href="https://www.w3schools.com/cssref/css3_pr_flex-flow.php">flex-flow</a></td>
           <td>A shorthand property for the flex-direction and the flex-wrap properties</td>
-          <td>&nbsp;</td>
+          <td>flex-flow: flex-direction flex-wrap|initial|inherit;</td>
         </tr>
         <tr>
           <td><a href="https://www.w3schools.com/cssref/css3_pr_flex-grow.php">flex-grow</a></td>
           <td>Specifies how much the item will grow relative to the rest</td>
-          <td>&nbsp;</td>
+          <td>flex-grow: number|initial|inherit;</td>
         </tr>
         <tr>
           <td><a href="https://www.w3schools.com/cssref/css3_pr_flex-shrink.php">flex-shrink</a></td>
           <td>Specifies how the item will shrink relative to the rest</td>
-          <td>&nbsp;</td>
+          <td>flex-shrink: number|initial|inherit;</td>
         </tr>
         <tr>
           <td><a href="https://www.w3schools.com/cssref/css3_pr_flex-wrap.php">flex-wrap</a></td>
           <td>Specifies whether the flexible items should wrap or not</td>
-          <td>&nbsp;</td>
+          <td>flex-wrap: nowrap|wrap|wrap-reverse|initial|inherit;</td>
         </tr>
         <tr>
           <td><a href="https://www.w3schools.com/cssref/css3_pr_order.php">order</a></td>
           <td>Sets the order of the flexible item, relative to the rest</td>
-          <td>&nbsp;</td>
+          <td>order: number|initial|inherit;</td>
         </tr>
         <tr>
           <td rowspan="18"><span>Grid</span></td>
@@ -1218,7 +1218,10 @@
             A shorthand property for the grid-template-rows, grid-template-columns, grid-template-areas, grid-auto-rows,
             grid-auto-columns, and the grid-auto-flow properties
           </td>
-          <td>&nbsp;</td>
+          <td>
+            grid: none|grid-template-rows / grid-template-columns|grid-template-areas|grid-template-rows /
+            [grid-auto-flow] grid-auto-columns|[grid-auto-flow] grid-auto-rows / grid-template-columns|initial|inherit;
+          </td>
         </tr>
         <tr>
           <td><a href="https://www.w3schools.com/cssref/pr_grid-area.php">grid-area</a></td>
@@ -1226,27 +1229,27 @@
             Either specifies a name for the grid item, or this property is a shorthand property for the grid-row-start,
             grid-column-start, grid-row-end, and grid-column-end properties
           </td>
-          <td>&nbsp;</td>
+          <td>grid-area: grid-row-start / grid-column-start / grid-row-end / grid-column-end | itemname;</td>
         </tr>
         <tr>
           <td><a href="https://www.w3schools.com/cssref/pr_grid-auto-columns.php">grid-auto-columns</a></td>
           <td>Specifies a default column size</td>
-          <td>&nbsp;</td>
+          <td>grid-auto-columns: auto|max-content|min-content|minmax()|fit-content()|length|%|initial|inherit;</td>
         </tr>
         <tr>
           <td><a href="https://www.w3schools.com/cssref/pr_grid-auto-flow.php">grid-auto-flow</a></td>
           <td>Specifies how auto-placed items are inserted in the grid</td>
-          <td>&nbsp;</td>
+          <td>grid-auto-flow: row|column|dense|row dense|column dense;</td>
         </tr>
         <tr>
           <td><a href="https://www.w3schools.com/cssref/pr_grid-auto-rows.php">grid-auto-rows</a></td>
           <td>Specifies a default row size</td>
-          <td>&nbsp;</td>
+          <td>grid-auto-rows: auto|fit-content()|max-content|min-content|minmax()|length|%|initial|inherit;</td>
         </tr>
         <tr>
           <td><a href="https://www.w3schools.com/cssref/pr_grid-column.php">grid-column</a></td>
           <td>A shorthand property for the grid-column-start and the grid-column-end properties</td>
-          <td>&nbsp;</td>
+          <td>grid-column: grid-column-start / grid-column-end;</td>
         </tr>
         <tr>
           <td><a href="https://www.w3schools.com/cssref/pr_grid-column-end.php">grid-column-end</a></td>
@@ -2374,7 +2377,7 @@
           <td>Defines whether or not the back face of an element should be visible when facing the user</td>
           <td>&nbsp;</td>
         </tr>
-        
+
         <tr>
           <td><a href="https://www.w3schools.com/cssref/css3_pr_box-decoration-break.php">box-decoration-break</a></td>
           <td>
@@ -2441,7 +2444,7 @@
           <td>Specifies the size of an element in the inline direction</td>
           <td>&nbsp;</td>
         </tr>
-        
+
         <tr>
           <td><a href="https://www.w3schools.com/cssref/css_pr_inset-inline.php">inset-inline</a></td>
           <td>Specifies the distance between an element and the parent element in the inline direction</td>
