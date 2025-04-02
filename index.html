@@ -1361,7 +1361,7 @@
           <td>place-self: auto|normal|stretch|start|end|center|left|right|overflow-alignment|baseline alignment|value|initial|inherit;</td>
         </tr>
         <tr>
-          <td rowspan="23"><span>Font</span></td>
+          <td rowspan="25"><span>Font</span></td>
         </tr>
         <tr>
           <td><a href="https://www.w3schools.com/cssref/pr_font_font.php">font</a></td>
@@ -1426,12 +1426,12 @@
         <tr>
           <td><a>font-synthesis-style</a></td>
           <td>&nbsp;</td>
-          <td>&nbsp;</td>
+          <td>auto|none</td>
         </tr>
         <tr>
           <td><a>font-synthesis-weight</a></td>
           <td>&nbsp;</td>
-          <td>&nbsp;</td>
+          <td>auto|none</td>
         </tr>
         <tr>
           <td><a href="https://www.w3schools.com/cssref/pr_font_font-variant.php">font-variant</a></td>
@@ -1443,7 +1443,30 @@
           <td>
             Controls the usage of alternate glyphs associated to alternative names defined in @font-feature-values
           </td>
-          <td>&nbsp;</td>
+          <td>
+            <pre>
+              /* Keyword values */
+font-variant-alternates: normal;
+font-variant-alternates: historical-forms;
+
+/* Functional notation values */
+font-variant-alternates: stylistic(user-defined-ident);
+font-variant-alternates: styleset(user-defined-ident);
+font-variant-alternates: character-variant(user-defined-ident);
+font-variant-alternates: swash(user-defined-ident);
+font-variant-alternates: ornaments(user-defined-ident);
+font-variant-alternates: annotation(user-defined-ident);
+font-variant-alternates: swash(ident1) annotation(ident2);
+
+/* Global values */
+font-variant-alternates: inherit;
+font-variant-alternates: initial;
+font-variant-alternates: revert;
+font-variant-alternates: revert-layer;
+font-variant-alternates: unset;
+
+            </pre>
+          </td>
         </tr>
         <tr>
           <td><a href="https://www.w3schools.com/cssref/css3_pr_font-variant-caps.php">font-variant-caps</a></td>
@@ -1453,19 +1476,91 @@
         <tr>
           <td><a>font-variant-east-asian</a></td>
           <td>Controls the usage of alternate glyphs for East Asian scripts (e.g Japanese and Chinese)</td>
-          <td>&nbsp;</td>
+          <td>
+            <pre>
+              font-variant-east-asian: normal;
+font-variant-east-asian: ruby;
+font-variant-east-asian: jis78; /* <east-asian-variant-values> */
+font-variant-east-asian: jis83; /* <east-asian-variant-values> */
+font-variant-east-asian: jis90; /* <east-asian-variant-values> */
+font-variant-east-asian: jis04; /* <east-asian-variant-values> */
+font-variant-east-asian: simplified; /* <east-asian-variant-values> */
+font-variant-east-asian: traditional; /* <east-asian-variant-values> */
+font-variant-east-asian: full-width; /* <east-asian-width-values> */
+font-variant-east-asian: proportional-width; /* <east-asian-width-values> */
+font-variant-east-asian: ruby full-width jis83;
+
+/* Global values */
+font-variant-east-asian: inherit;
+font-variant-east-asian: initial;
+font-variant-east-asian: revert;
+font-variant-east-asian: revert-layer;
+font-variant-east-asian: unset;
+
+            </pre>
+          </td>
         </tr>
         <tr>
           <td><a>font-variant-ligatures</a></td>
           <td>
             Controls which ligatures and contextual forms are used in textual content of the elements it applies to
           </td>
-          <td>&nbsp;</td>
+          <td>
+            <pre>
+              /* Keyword values */
+font-variant-ligatures: normal;
+font-variant-ligatures: none;
+font-variant-ligatures: common-ligatures; /* <common-lig-values> */
+font-variant-ligatures: no-common-ligatures; /* <common-lig-values> */
+font-variant-ligatures: discretionary-ligatures; /* <discretionary-lig-values> */
+font-variant-ligatures: no-discretionary-ligatures; /* <discretionary-lig-values> */
+font-variant-ligatures: historical-ligatures; /* <historical-lig-values> */
+font-variant-ligatures: no-historical-ligatures; /* <historical-lig-values> */
+font-variant-ligatures: contextual; /* <contextual-alt-values> */
+font-variant-ligatures: no-contextual; /* <contextual-alt-values> */
+
+/* Two keyword values */
+font-variant-ligatures: no-contextual common-ligatures;
+
+/* Four keyword values */
+font-variant-ligatures: common-ligatures no-discretionary-ligatures
+  historical-ligatures contextual;
+
+/* Global values */
+font-variant-ligatures: inherit;
+font-variant-ligatures: initial;
+font-variant-ligatures: revert;
+font-variant-ligatures: revert-layer;
+font-variant-ligatures: unset;
+
+            </pre>
+          </td>
         </tr>
         <tr>
           <td><a>font-variant-numeric</a></td>
           <td>Controls the usage of alternate glyphs for numbers, fractions, and ordinal markers</td>
-          <td>&nbsp;</td>
+          <td>
+            <pre>
+              font-variant-numeric: normal;
+font-variant-numeric: ordinal;
+font-variant-numeric: slashed-zero;
+font-variant-numeric: lining-nums; /* <numeric-figure-values> */
+font-variant-numeric: oldstyle-nums; /* <numeric-figure-values> */
+font-variant-numeric: proportional-nums; /* <numeric-spacing-values> */
+font-variant-numeric: tabular-nums; /* <numeric-spacing-values> */
+font-variant-numeric: diagonal-fractions; /* <numeric-fraction-values> */
+font-variant-numeric: stacked-fractions; /* <numeric-fraction-values> */
+font-variant-numeric: oldstyle-nums stacked-fractions;
+
+/* Global values */
+font-variant-numeric: inherit;
+font-variant-numeric: initial;
+font-variant-numeric: revert;
+font-variant-numeric: revert-layer;
+font-variant-numeric: unset;
+
+            </pre>
+          </td>
         </tr>
         <tr>
           <td><a>font-variant-position</a></td>
@@ -1473,7 +1568,22 @@
             Controls the usage of alternate glyphs of smaller size positioned as superscript or subscript regarding the
             baseline of the font
           </td>
-          <td>&nbsp;</td>
+          <td>
+            <pre>
+              /* Keyword values */
+font-variant-position: normal;
+font-variant-position: sub;
+font-variant-position: super;
+
+/* Global values */
+font-variant-position: inherit;
+font-variant-position: initial;
+font-variant-position: revert;
+font-variant-position: revert-layer;
+font-variant-position: unset;
+
+            </pre>
+          </td>
         </tr>
         <tr>
           <td><a href="https://www.w3schools.com/cssref/pr_font_weight.php">font-weight</a></td>
@@ -1483,23 +1593,45 @@
         <tr>
           <td><a>font-optical-sizing</a></td>
           <td>&nbsp;</td>
-          <td>&nbsp;</td>
+          <td>auto|none</td>
         </tr>
         <tr>
           <td><a>font-variation-settings</a></td>
           <td>&nbsp;</td>
-          <td>&nbsp;</td>
+          <td>
+            <pre>
+              /* Use the default settings */
+font-variation-settings: normal;
+
+/* Set values for variable font axis names */
+font-variation-settings: "xhgt" 0.7;
+
+/* Global values */
+font-variation-settings: inherit;
+font-variation-settings: initial;
+font-variation-settings: revert;
+font-variation-settings: revert-layer;
+font-variation-settings: unset;
+
+            </pre>
+          </td>
         </tr>
         <tr>
           <td><a>font-display</a></td>
-          <td>&nbsp;</td>
-          <td>&nbsp;</td>
+          <td>The font-display descriptor for the @font-face at-rule determines how a font face is displayed based on whether and when it is downloaded and ready to use.</td>
+          <td>
+            <pre>
+              /* Keyword values */
+font-display: auto;
+font-display: block;
+font-display: swap;
+font-display: fallback;
+font-display: optional;
+
+            </pre>
+          </td>
         </tr>
-        <tr>
-          <td><a>font-smooth</a></td>
-          <td>&nbsp;</td>
-          <td>&nbsp;</td>
-        </tr>
+        
         <tr>
           <td rowspan="25"><span>Text</span></td>
         </tr>
