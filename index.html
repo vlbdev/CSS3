@@ -2027,23 +2027,44 @@ list-style-type: unset;
         </tr>
         <tr>
           <td><a>appearance</a></td>
-          <td>&nbsp;</td>
-          <td>&nbsp;</td>
+          <td>is used to display UI elements with platform-specific styling, based on the operating system's theme.</td>
+          <td>
+            <pre>
+              /* CSS Basic User Interface Module Level 4 values */
+appearance: none;
+appearance: auto;
+appearance: menulist-button;
+appearance: textfield;
+appearance: base-select;
+
+/* Global values */
+appearance: inherit;
+appearance: initial;
+appearance: revert;
+appearance: revert-layer;
+appearance: unset;
+
+/* <compat-auto> values have the same effect as 'auto' */
+appearance: button;
+appearance: checkbox;
+
+            </pre>
+          </td>
         </tr>
         <tr>
           <td><a href="https://www.w3schools.com/cssref/css3_pr_resize.php">resize</a></td>
           <td>Defines if (and how) an element is resizable by the user</td>
-          <td>&nbsp;</td>
+          <td>resize: none|both|horizontal|vertical|initial|inherit;</td>
         </tr>
         <tr>
           <td><a href="https://www.w3schools.com/cssref/css3_pr_caret-color.php">caret-color</a></td>
           <td>Specifies the color of the cursor (caret) in inputs, textareas, or any element that is editable</td>
-          <td>&nbsp;</td>
+          <td>caret-color: auto|color|initial|inherit;</td>
         </tr>
         <tr>
           <td><a href="https://www.w3schools.com/cssref/css4_pr_accent-color.php">accent-color</a></td>
           <td>Specifies an accent color for user-interface controls</td>
-          <td>&nbsp;</td>
+          <td>accent-color: auto|color|initial|inherit;</td>
         </tr>
         <tr>
           <td rowspan="6"><span>Visibility</span></td>
