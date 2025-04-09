@@ -2746,12 +2746,57 @@ touch-action: unset;
         <tr>
           <td><a>fill</a></td>
           <td>&nbsp;</td>
-          <td>&nbsp;</td>
+          <td>
+            <pre>
+              /* keywords */
+fill: none;
+fill: context-fill;
+fill: context-stroke;
+
+/* <color> values */
+fill: red;
+fill: hsl(120deg 75% 25% / 60%);
+
+/* <url> values */
+fill: url(#gradientElementID);
+fill: url(star.png);
+
+/* <url> with fallback */
+fill: url(#gradientElementID) blue;
+fill: url(star.png) none;
+
+/* Global values */
+fill: inherit;
+fill: initial;
+fill: revert;
+fill: revert-layer;
+fill: unset;
+
+            </pre>
+          </td>
         </tr>
         <tr>
           <td><a>stroke</a></td>
           <td>&nbsp;</td>
-          <td>&nbsp;</td>
+          <td>
+            <pre>
+              /* assorted color values */
+stroke: rgb(153 51 102 / 1);
+stroke: color-mix(in lch, var(--primaryColor) 35%, gray 15%));
+stroke: dodgerblue;
+stroke: currentColor;
+stroke: transparent;
+stroke: context-stroke;
+
+/* Global values */
+stroke: inherit;
+stroke: initial;
+stroke: revert;
+stroke: revert-layer;
+stroke: unset;
+
+            </pre>
+          </td>
         </tr>
         <tr>
           <td rowspan="1"><span>Print styles</span></td>
