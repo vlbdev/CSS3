@@ -3051,17 +3051,188 @@ stroke: unset;
         <tr>
           <td><a href="https://www.w3schools.com/cssref/css3_pr_transform.php">transform</a></td>
           <td>Applies a 2D or 3D transformation to an element</td>
-          <td>&nbsp;</td>
+          <td>
+            <table class="ws-table-all notranslate">
+<tbody>
+<tr>
+<th>Value</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>none</td>
+<td>Defines that there should be no transformation</td>
+</tr>
+<tr>
+<td><a href="func_matrix.php">matrix(<em>n,n,n,n,n,n</em>)</a></td>
+<td>Defines a 2D transformation, using a matrix of six values</td>
+</tr>
+<tr>
+<td><a href="func_matrix3d.php">matrix3d<br /> (<em>n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n</em>)</a></td>
+<td>Defines a 3D transformation, using a 4x4 matrix of 16 values</td>
+</tr>
+<tr>
+<td><a href="func_translate.php">translate(<em>x,y</em>)</a></td>
+<td>Defines a 2D translation</td>
+</tr>
+<tr>
+<td>translate3d(<em>x,y,z</em>)</td>
+<td>Defines a 3D translation</td>
+</tr>
+<tr>
+<td><a href="func_translatex.php">translateX(<em>x</em>)</a></td>
+<td>Defines a translation, using only the value for the X-axis</td>
+</tr>
+<tr>
+<td><a href="func_translatey.php">translateY(<em>y</em>)</a></td>
+<td>Defines a translation, using only the value for the Y-axis</td>
+</tr>
+<tr>
+<td>translateZ(<em>z</em>)</td>
+<td>Defines a 3D translation, using only the value for the Z-axis</td>
+</tr>
+<tr>
+<td><a href="func_scale.php">scale(<em>x,y</em>)</a></td>
+<td>Scales an element horizontally and vertically (width and height)</td>
+</tr>
+<tr>
+<td><a href="func_scale3d.php">scale3d(<em>x,y,z</em>)</a></td>
+<td>Defines a 3D scale transformation</td>
+</tr>
+<tr>
+<td><a href="func_scalex.php">scaleX(<em>x</em>)</a></td>
+<td>Scales an element horizontally (the width)</td>
+</tr>
+<tr>
+<td><a href="func_scaley.php">scaleY(<em>y</em>)</a></td>
+<td>Scales an element vertically (the height)</td>
+</tr>
+<tr>
+<td>scaleZ(<em>z</em>)</td>
+<td>Defines a 3D scale transformation by giving a value for the Z-axis</td>
+</tr>
+<tr>
+<td><a href="func_rotate.php">rotate(<em>angle</em>)</a></td>
+<td>Defines a 2D rotation, the angle is specified in the parameter</td>
+</tr>
+<tr>
+<td><a href="func_rotate3d.php">rotate3d(<em>x,y,z,angle</em>)</a></td>
+<td>Defines a 3D rotation</td>
+</tr>
+<tr>
+<td><a href="func_rotatex.php">rotateX(<em>angle</em>)</a></td>
+<td>Defines a 3D rotation along the X-axis</td>
+</tr>
+<tr>
+<td><a href="func_rotatey.php">rotateY(<em>angle</em>)</a></td>
+<td>Defines a 3D rotation along the Y-axis</td>
+</tr>
+<tr>
+<td><a href="func_rotatez.php">rotateZ(<em>angle</em>)</a></td>
+<td>Defines a 3D rotation along the Z-axis</td>
+</tr>
+<tr>
+<td><a href="func_skew.php">skew(<em>ax,ay</em>)</a></td>
+<td>Defines a 2D skew transformation along the X- and the Y-axis</td>
+</tr>
+<tr>
+<td><a href="func_skewx.php">skewX(<em>a</em>)</a></td>
+<td>Defines a 2D skew transformation along the X-axis</td>
+</tr>
+<tr>
+<td><a href="func_skewy.php">skewY(<em>a</em>)</a></td>
+<td>Defines a 2D skew transformation along the Y-axis</td>
+</tr>
+<tr>
+<td><a href="func_perspective.php">perspective(<em>n</em>)</a></td>
+<td>Defines a perspective view for a 3D transformed element</td>
+</tr>
+<tr>
+<td>initial</td>
+<td>Sets this property to its default value. <a href="css_initial.php">Read about <em>initial</em></a></td>
+</tr>
+<tr>
+<td>inherit</td>
+<td>Inherits this property from its parent element. <a href="css_inherit.php">Read about <em>inherit</em></a></td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+          </td>
         </tr>
         <tr>
           <td><a href="https://www.w3schools.com/cssref/css3_pr_transform-origin.php">transform-origin</a></td>
           <td>Allows you to change the position on transformed elements</td>
-          <td>&nbsp;</td>
+          <td>
+            <table class="ws-table-all notranslate">
+  <tbody><tr>
+    <th style="width:20%">Property Value</th>
+    <th>Description</th>
+  </tr>  
+  <tr>
+    <td><i>x-axis</i></td>
+    <td>Defines where the view is placed at the x-axis. Possible values:<ul>
+    <li>left</li>
+    <li>center</li>
+    <li>right</li>
+    <li><i>length</i></li>
+    <li><i>%</i></li>
+ </ul>
+  </td>
+  </tr>
+  <tr>
+    <td><i>y-axis</i></td>
+    <td>Defines where the view is placed at the y-axis. Possible values:<ul>
+    <li>top</li>
+    <li>center</li>
+    <li>bottom</li>
+    <li><i>length</i></li>
+    <li><i>%</i></li>
+ </ul>
+  </td>
+  </tr>
+  <tr>
+    <td><i>z-axis</i></td>
+    <td>Defines where the view is placed at the z-axis (for 3D transformations). Possible values:<ul>
+    <li><i>length</i></li>
+ </ul>
+  </td>
+  </tr>
+  <tr>
+    <td>initial</td>
+    <td>Sets this property to its default value. <a href="css_initial.php">Read about <em>initial</em></a></td>
+    </tr>
+  <tr>
+    <td>inherit</td>
+    <td>Inherits this property from its parent element. <a href="css_inherit.php">Read about <em>inherit</em></a></td>
+    </tr>
+</tbody></table>
+          </td>
         </tr>
         <tr>
           <td><a href="https://www.w3schools.com/cssref/css3_pr_transform-style.php">transform-style</a></td>
           <td>Specifies how nested elements are rendered in 3D space</td>
-          <td>&nbsp;</td>
+          <td><table class="ws-table-all notranslate">
+  <tbody><tr>
+    <th style="width:20%">Property Value</th>
+    <th>Description</th>
+  </tr>  
+  <tr>
+    <td>flat</td>
+    <td>Specifies that child elements will NOT preserve its 3D position. This is default</td>
+  </tr>
+  <tr>
+    <td>preserve-3d</td>
+    <td>Specifies that child elements will preserve its 3D position</td>
+  </tr>
+  <tr>
+    <td>initial</td>
+    <td>Sets this property to its default value. <a href="css_initial.php">Read about <em>initial</em></a></td>
+    </tr>
+  <tr>
+    <td>inherit</td>
+    <td>Inherits this property from its parent element. <a href="css_inherit.php">Read about <em>inherit</em></a></td>
+    </tr>
+</tbody></table></td>
         </tr>
         <tr>
           <td rowspan="6"><span>Transition</span></td>
