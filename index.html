@@ -108,7 +108,7 @@
           </td>
         </tr>
         <tr>
-          <td rowspan="14"><span>Background</span></td>
+          <td rowspan="24"><span>Background</span></td>
         </tr>
         <tr>
           <td><a href="https://www.w3schools.com/cssref/css3_pr_background.php">background</a></td>
@@ -446,6 +446,97 @@
               </tbody>
             </table>
           </td>
+        </tr>
+        <tr>
+          <td><a href="https://www.w3schools.com/cssref/css3_pr_mask.php">mask</a></td>
+          <td>
+            A shorthand property for mask-image, mask-mode, mask-repeat, mask-position, mask-clip, mask-origin,
+            mask-size and mask-composite
+          </td>
+          <td>mask-image: mask-image mask-mode mask-repeat mask-position mask-clip mask-origin mask-size mask-composite|initial|inherit;</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.w3schools.com/cssref/css3_pr_mask-clip.php">mask-clip</a></td>
+          <td>Specifies which area is affected by a mask image</td>
+          <td>mask-clip: border-box|content-box|padding-box|fill-box|stroke-box|view-box|no-clip|border|padding|content|text|initial|inherit;</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.w3schools.com/cssref/css3_pr_mask-composite.php">mask-composite</a></td>
+          <td>Specifies a compositing operation used on the current mask layer with the mask layers below it</td>
+          <td>mask-composite: add|subtract|intersect|exclude|initial|inherit;</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.w3schools.com/cssref/css3_pr_mask-image.php">mask-image</a></td>
+          <td>Specifies an image to be used as a mask layer for an element</td>
+          <td>mask-image: none|image|url()|initial|inherit;</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.w3schools.com/cssref/css3_pr_mask-mode.php">mask-mode</a></td>
+          <td>Specifies whether the mask layer image is treated as a luminance mask or as an alpha mask</td>
+          <td>mask-mode: match-source|luminance|alpha|initial|inherit;</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.w3schools.com/cssref/css3_pr_mask-origin.php">mask-origin</a></td>
+          <td>Specifies the origin position (the mask position area) of a mask layer image</td>
+          <td>mask-origin: border-box|content-box|padding-box|fill-box|stroke-box|view-box|initial|inherit;</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.w3schools.com/cssref/css3_pr_mask-position.php">mask-position</a></td>
+          <td>Sets the starting position of a mask layer image (relative to the mask position area)</td>
+          <td><table class="ws-table-all notranslate">
+  <tbody><tr>
+    <th style="width:18%">Value</th>
+    <th>Description</th>
+  </tr>  
+  <tr>
+    <td>left top<br>
+      left center<br>
+      left bottom<br>
+      right top<br>
+      right center<br>
+      right bottom<br>
+      center top<br>
+      center center<br>
+      center bottom</td>
+    <td>If you only specify one keyword, the other value will be "center"</td>
+  </tr>
+  <tr>
+    <td><i>x% y%</i></td>
+    <td>The first value is the horizontal position and the second value is the 
+    vertical. The top left corner is 0% 0%. The right bottom corner is 100% 
+    100%. If you only specify one value, the other value will be 50%. Default value is: 0% 0%</td>
+  </tr>
+  <tr>
+    <td><i>xpos ypos</i></td>
+    <td>The first value&nbsp;is the horizontal position and the second
+      value is the vertical. The top left corner is 0 0. Units can be pixels
+      (0px 0px) or any other <a href="css_units.php">CSS units</a>. If you only specify one value, the other value will be 50%. You can mix % and positions</td>
+
+  </tr>
+  <tr>
+    <td>initial</td>
+    <td>Sets this property to its default value. <a href="css_initial.php">Read about <em>initial</em></a></td>
+    </tr>
+  <tr>
+    <td>inherit</td>
+    <td>Inherits this property from its parent element. <a href="css_inherit.php">Read about <em>inherit</em></a></td>
+    </tr>
+</tbody></table></td>
+        </tr>
+        <tr>
+          <td><a href="https://www.w3schools.com/cssref/css3_pr_mask-repeat.php">mask-repeat</a></td>
+          <td>Specifies how the mask layer image is repeated</td>
+          <td>mask-repeat: repeat|repeat-x|repeat-y|space|round|no-repeat|initial|inherit;</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.w3schools.com/cssref/css3_pr_mask-size.php">mask-size</a></td>
+          <td>Specifies the size of a mask layer image</td>
+          <td>mask-size: auto|size|contain|cover|initial|inherit;</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.w3schools.com/cssref/css3_pr_mask-type.php">mask-type</a></td>
+          <td>Specifies whether an SVG element is treated as a luminance mask or as an alpha mask</td>
+          <td>mask-type: luminance|alpha|initial|inherit;</td>
         </tr>
         <tr>
           <td rowspan="68"><span>Border</span></td>
@@ -2458,7 +2549,7 @@ scrollbar-width: unset;
           <td>overscroll-behavior-y: auto|contain|none|initial|inherit;</td>
         </tr>
         <tr>
-          <td rowspan="8"><span>Interface</span></td>
+          <td rowspan="9"><span>Interface</span></td>
         </tr>
         <tr>
           <td><a href="https://www.w3schools.com/cssref/pr_class_cursor.php">cursor</a></td>
@@ -2752,6 +2843,11 @@ touch-action: unset;
           <td><a href="https://www.w3schools.com/cssref/css3_pr_orphans.php">orphans</a></td>
           <td>Sets the minimum number of lines that must be left at the bottom of a page or column</td>
           <td>orphans: integer|initial|inherit;</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.w3schools.com/cssref/css3_pr_color-scheme.php">color-scheme</a></td>
+          <td>Indicates which operating system color scheme an element should render with</td>
+          <td>color-scheme: normal|light|dark|only light|only dark|light dark;</td>
         </tr>
         <tr>
           <td rowspan="3"><span>SVG</span></td>
@@ -3285,7 +3381,7 @@ stroke: unset;
           <td>translate: x-axis y-axis z-axis|initial|inherit; </td>
         </tr>
         <tr>
-          <td rowspan="127"><span>Unsorted</span></td>
+          <td rowspan="126"><span>Unsorted</span></td>
         </tr>
         <tr>
           <td><a href="https://www.w3schools.com/cssref/css3_pr_all.php">all</a></td>
@@ -3319,11 +3415,7 @@ stroke: unset;
           <td>Specifies whether or not a page-, column-, or region-break should occur inside the specified element</td>
           <td>break-inside: auto|all|always|avoid|avoid-column|avoid-page|avoid-region|column|left|page|recto|region|right|verso|initial|inherit;</td>
         </tr>
-        <tr>
-          <td><a href="https://www.w3schools.com/cssref/css3_pr_color-scheme.php">color-scheme</a></td>
-          <td>Indicates which operating system color scheme an element should render with</td>
-          <td>color-scheme: normal|light|dark|only light|only dark|light dark;</td>
-        </tr>
+        
         <tr>
           <td><a href="https://www.w3schools.com/cssref/pr_gen_content.php">content</a></td>
           <td>Used with the :before and :after pseudo-elements, to insert generated content</td>
@@ -3400,59 +3492,7 @@ stroke: unset;
           <td>Points to a marker that will be drawn on the first vertex of an element's path</td>
           <td>&nbsp;</td>
         </tr>
-        <tr>
-          <td><a href="https://www.w3schools.com/cssref/css3_pr_mask.php">mask</a></td>
-          <td>
-            A shorthand property for mask-image, mask-mode, mask-repeat, mask-position, mask-clip, mask-origin,
-            mask-size and mask-composite
-          </td>
-          <td>&nbsp;</td>
-        </tr>
-        <tr>
-          <td><a href="https://www.w3schools.com/cssref/css3_pr_mask-clip.php">mask-clip</a></td>
-          <td>Specifies which area is affected by a mask image</td>
-          <td>&nbsp;</td>
-        </tr>
-        <tr>
-          <td><a href="https://www.w3schools.com/cssref/css3_pr_mask-composite.php">mask-composite</a></td>
-          <td>Specifies a compositing operation used on the current mask layer with the mask layers below it</td>
-          <td>&nbsp;</td>
-        </tr>
-        <tr>
-          <td><a href="https://www.w3schools.com/cssref/css3_pr_mask-image.php">mask-image</a></td>
-          <td>Specifies an image to be used as a mask layer for an element</td>
-          <td>&nbsp;</td>
-        </tr>
-        <tr>
-          <td><a href="https://www.w3schools.com/cssref/css3_pr_mask-mode.php">mask-mode</a></td>
-          <td>Specifies whether the mask layer image is treated as a luminance mask or as an alpha mask</td>
-          <td>&nbsp;</td>
-        </tr>
-        <tr>
-          <td><a href="https://www.w3schools.com/cssref/css3_pr_mask-origin.php">mask-origin</a></td>
-          <td>Specifies the origin position (the mask position area) of a mask layer image</td>
-          <td>&nbsp;</td>
-        </tr>
-        <tr>
-          <td><a href="https://www.w3schools.com/cssref/css3_pr_mask-position.php">mask-position</a></td>
-          <td>Sets the starting position of a mask layer image (relative to the mask position area)</td>
-          <td>&nbsp;</td>
-        </tr>
-        <tr>
-          <td><a href="https://www.w3schools.com/cssref/css3_pr_mask-repeat.php">mask-repeat</a></td>
-          <td>Specifies how the mask layer image is repeated</td>
-          <td>&nbsp;</td>
-        </tr>
-        <tr>
-          <td><a href="https://www.w3schools.com/cssref/css3_pr_mask-size.php">mask-size</a></td>
-          <td>Specifies the size of a mask layer image</td>
-          <td>&nbsp;</td>
-        </tr>
-        <tr>
-          <td><a href="https://www.w3schools.com/cssref/css3_pr_mask-type.php">mask-type</a></td>
-          <td>Specifies whether an SVG element is treated as a luminance mask or as an alpha mask</td>
-          <td>&nbsp;</td>
-        </tr>
+        
         <tr>
           <td><a href="https://www.w3schools.com/cssref/pr_print_pageba.php">page-break-after</a></td>
           <td>Sets the page-break behavior after an element. Replaced by break-after property</td>
