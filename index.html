@@ -107,7 +107,31 @@
             linear|ease|ease-in|ease-out|ease-in-out|step-start|step-end|steps(int,start|end)|cubic-bezier(n,n,n,n)|initial|inherit;
           </td>
         </tr>
-        
+        <tr>
+          <td><a>animation-composition</a></td>
+          <td>&nbsp;</td>
+          <td>
+            <pre>
+              /* Single animation */
+animation-composition: replace;
+animation-composition: add;
+animation-composition: accumulate;
+
+/* Multiple animations */
+animation-composition: replace, add;
+animation-composition: add, accumulate;
+animation-composition: replace, add, accumulate;
+
+/* Global values */
+animation-composition: inherit;
+animation-composition: initial;
+animation-composition: revert;
+animation-composition: revert-layer;
+animation-composition: unset;
+
+            </pre>
+          </td>
+        </tr>
         <tr>
           <td rowspan="24"><span>Background</span></td>
         </tr>
