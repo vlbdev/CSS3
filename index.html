@@ -2986,7 +2986,7 @@ touch-action: unset;
           <td>color-scheme: normal|light|dark|only light|only dark|light dark;</td>
         </tr>
         <tr>
-          <td rowspan="8"><span>SVG</span></td>
+          <td rowspan="11"><span>SVG</span></td>
         </tr>
         <tr>
           <td><a>fill</a></td>
@@ -3067,6 +3067,67 @@ stroke: unset;
           <td><a>color-interpolation-filters</a></td>
           <td>&nbsp;</td>
           <td>auto | sRGB | linearRGB</td>
+        </tr>
+        <tr>
+          <td><a>cx</a></td>
+          <td>&nbsp;</td>
+          <td>
+            <pre>
+              /* length and percentage values */
+cx: 20px;
+cx: 20%;
+
+/* Global values */
+cx: inherit;
+cx: initial;
+cx: revert;
+cx: revert-layer;
+cx: unset;
+
+            </pre>
+          </td>
+        </tr>
+        <tr>
+          <td><a>cy</a></td>
+          <td>&nbsp;</td>
+          <td>
+            <pre>
+              /* length and percentage values */
+cy: 3px;
+cy: 20%;
+
+/* Global values */
+cy: inherit;
+cy: initial;
+cy: revert;
+cy: revert-layer;
+cy: unset;
+
+            </pre>
+          </td>
+        </tr>
+        <tr>
+          <td><a>d</a></td>
+          <td>&nbsp;</td>
+          <td>
+            <pre>
+              /* Default */
+d: none;
+
+/* Basic usage */
+d: path("m 5,5 h 35 L 20,30 z");
+d: path("M 0,25 l 50,150 l 200,50 z");
+d: path("M 10,5 l 90,0 -80,80 0,-60 80,80 -90,0 z");
+
+/* Global values */
+d: inherit;
+d: initial;
+d: revert;
+d: revert-layer;
+d: unset;
+
+            </pre>
+          </td>
         </tr>
         <tr>
           <td rowspan="1"><span>Print styles</span></td>
@@ -3929,21 +3990,7 @@ content-visibility: unset;
             </pre>
           </td>
         </tr>
-        <tr>
-          <td><a>cx</a></td>
-          <td>&nbsp;</td>
-          <td>&nbsp;</td>
-        </tr>
-        <tr>
-          <td><a>cy</a></td>
-          <td>&nbsp;</td>
-          <td>&nbsp;</td>
-        </tr>
-        <tr>
-          <td><a>d</a></td>
-          <td>&nbsp;</td>
-          <td>&nbsp;</td>
-        </tr>
+        
         <tr>
           <td><a>dominant-baseline</a></td>
           <td>&nbsp;</td>
