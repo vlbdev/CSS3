@@ -3844,17 +3844,70 @@ contain-intrinsic-width: unset;
         <tr>
           <td><a>container</a></td>
           <td>&nbsp;</td>
-          <td>&nbsp;</td>
+          <td>
+            <pre>
+              /* <container-name> */
+container: my-layout;
+
+/* <container-name> / <container-type> */
+container: my-layout / size;
+
+/* Global Values */
+container: inherit;
+container: initial;
+container: revert;
+container: revert-layer;
+container: unset;
+
+            </pre>
+          </td>
         </tr>
         <tr>
           <td><a>container-name</a></td>
           <td>&nbsp;</td>
-          <td>&nbsp;</td>
+          <td>
+            <pre>
+              container-name: none;
+
+/* A single name */
+container-name: myLayout;
+
+/* Multiple names */
+container-name: myPageLayout myComponentLibrary;
+
+/* Global Values */
+container-name: inherit;
+container-name: initial;
+container-name: revert;
+container-name: revert-layer;
+container-name: unset;
+
+            </pre>
+          </td>
         </tr>
         <tr>
           <td><a>container-type</a></td>
           <td>&nbsp;</td>
-          <td>&nbsp;</td>
+          <td>
+            <pre>
+              /* Keyword values */
+container-type: normal;
+container-type: size;
+container-type: inline-size;
+container-type: scroll-state;
+
+/* Two values */
+container-type: size scroll-state;
+
+/* Global Values */
+container-type: inherit;
+container-type: initial;
+container-type: revert;
+container-type: revert-layer;
+container-type: unset;
+
+            </pre>
+          </td>
         </tr>
         <tr>
           <td><a>content-visibility</a></td>
