@@ -1490,7 +1490,7 @@ animation-composition: unset;
           <td>place-self: auto|normal|stretch|start|end|center|left|right|overflow-alignment|baseline alignment|value|initial|inherit;</td>
         </tr>
         <tr>
-          <td rowspan="25"><span>Font</span></td>
+          <td rowspan="27"><span>Font</span></td>
         </tr>
         <tr>
           <td><a href="https://www.w3schools.com/cssref/pr_font_font.php">font</a></td>
@@ -1563,9 +1563,49 @@ animation-composition: unset;
           <td>auto|none</td>
         </tr>
         <tr>
+          <td><a>font-palette</a></td>
+          <td>&nbsp;</td>
+          <td>
+            <pre>
+              /* Using a font-defined palette */
+font-palette: normal;
+
+/* Using a user-defined palette */
+font-palette: --one;
+
+/* Creating a new palette by blending two others */
+font-palette: palette-mix(in lch, --blue, --yellow);
+
+            </pre>
+          </td>
+        </tr>
+        
+        
+        <tr>
           <td><a href="https://www.w3schools.com/cssref/pr_font_font-variant.php">font-variant</a></td>
           <td>Specifies whether or not a text should be displayed in a small-caps font</td>
           <td>font-variant: normal|small-caps|initial|inherit;</td>
+        </tr>
+        <tr>
+          <td><a>font-variant-emoji</a></td>
+          <td>&nbsp;</td>
+          <td>
+            <pre>
+              /* Keyword values */
+font-variant-emoji: normal;
+font-variant-emoji: text;
+font-variant-emoji: emoji;
+font-variant-emoji: unicode;
+
+/* Global values */
+font-variant-emoji: inherit;
+font-variant-emoji: initial;
+font-variant-emoji: revert;
+font-variant-emoji: revert-layer;
+font-variant-emoji: unset;
+
+            </pre>
+          </td>
         </tr>
         <tr>
           <td><a>font-variant-alternates</a></td>
@@ -4097,17 +4137,7 @@ flood-opacity: unset;
             </pre>
           </td>
         </tr>
-        <tr>
-          <td><a>font-palette</a></td>
-          <td>&nbsp;</td>
-          <td>&nbsp;</td>
-        </tr>
         
-        <tr>
-          <td><a>font-variant-emoji</a></td>
-          <td>&nbsp;</td>
-          <td>&nbsp;</td>
-        </tr>
         <tr>
           <td><a>forced-color-adjust</a></td>
           <td>&nbsp;</td>
