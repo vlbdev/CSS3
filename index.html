@@ -4171,7 +4171,32 @@ hyphenate-character: auto;
         <tr>
           <td><a>hyphenate-limit-chars</a></td>
           <td>&nbsp;</td>
-          <td>&nbsp;</td>
+          <td>
+            <pre>
+              /* Numeric values */
+hyphenate-limit-chars: 10 4 4;
+hyphenate-limit-chars: 10 4;
+hyphenate-limit-chars: 10;
+
+/* Keyword values */
+hyphenate-limit-chars: auto auto auto;
+hyphenate-limit-chars: auto auto;
+hyphenate-limit-chars: auto;
+
+/* Mix of numeric and keyword values */
+hyphenate-limit-chars: 10 auto 4;
+hyphenate-limit-chars: 10 auto;
+hyphenate-limit-chars: auto 3;
+
+/* Global values */
+hyphenate-limit-chars: inherit;
+hyphenate-limit-chars: initial;
+hyphenate-limit-chars: revert;
+hyphenate-limit-chars: revert-layer;
+hyphenate-limit-chars: unset;
+
+            </pre>
+          </td>
         </tr>
         <tr>
           <td><a>image-orientation</a></td>
