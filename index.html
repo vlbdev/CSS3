@@ -1849,7 +1849,7 @@ font-display: optional;
         </tr>
         
         <tr>
-          <td rowspan="30"><span>Text</span></td>
+          <td rowspan="34"><span>Text</span></td>
         </tr>
         <tr>
           <td><a href="https://www.w3schools.com/cssref/pr_text_text-align.php">text-align</a></td>
@@ -1984,6 +1984,21 @@ font-display: optional;
           <td>text-wrap: wrap; nowrap; balance; pretty; stable;</td>
         </tr>
         <tr>
+          <td><a>text-wrap-mode</a></td>
+          <td>&nbsp;</td>
+          <td> wrap    |
+  nowrap</td>
+        </tr>
+        <tr>
+          <td><a>text-wrap-style</a></td>
+          <td>&nbsp;</td>
+          <td>  auto           |
+  balance        |
+  stable         |
+  pretty         |
+  avoid-orphans  </td>
+        </tr>
+        <tr>
           <td><a>text-size-adjust</a></td>
           <td>&nbsp;</td>
           <td>auto | none | %</td>
@@ -2075,6 +2090,57 @@ text-stroke: 4px navy;
 -webkit-text-stroke-width: revert;
 -webkit-text-stroke-width: revert-layer;
 -webkit-text-stroke-width: unset;
+
+            </pre>
+          </td>
+        </tr>
+        <tr>
+          <td><a>text-box</a></td>
+          <td>&nbsp;</td>
+          <td>
+            <pre>
+              /* Single keyword */
+text-box: normal;
+
+/* One text-box-edge keyword */
+text-box: trim-start text;
+text-box: trim-both text;
+
+/* Two text-box-edge keywords */
+text-box: trim-start cap alphabetic;
+text-box: trim-both ex text;
+
+/* Global values */
+text-box: inherit;
+text-box: initial;
+text-box: revert;
+text-box: revert-layer;
+text-box: unset;
+
+            </pre>
+          </td>
+        </tr>
+        <tr>
+          <td><a>text-box-edge</a></td>
+          <td>&nbsp;</td>
+          <td>
+            <pre>
+              /* Single keyword */
+text-box-edge: auto;
+text-box-edge: text;
+
+/* Two text-edge values */
+text-box-edge: text text;
+text-box-edge: text alphabetic;
+text-box-edge: cap alphabetic;
+text-box-edge: ex text;
+
+/* Global values */
+text-box-edge: inherit;
+text-box-edge: initial;
+text-box-edge: revert;
+text-box-edge: revert-layer;
+text-box-edge: unset;
 
             </pre>
           </td>
@@ -4571,57 +4637,7 @@ shape-image-threshold: 0.7;</pre>
         
         
         
-        <tr>
-          <td><a>text-box</a></td>
-          <td>&nbsp;</td>
-          <td>
-            <pre>
-              /* Single keyword */
-text-box: normal;
-
-/* One text-box-edge keyword */
-text-box: trim-start text;
-text-box: trim-both text;
-
-/* Two text-box-edge keywords */
-text-box: trim-start cap alphabetic;
-text-box: trim-both ex text;
-
-/* Global values */
-text-box: inherit;
-text-box: initial;
-text-box: revert;
-text-box: revert-layer;
-text-box: unset;
-
-            </pre>
-          </td>
-        </tr>
-        <tr>
-          <td><a>text-box-edge</a></td>
-          <td>&nbsp;</td>
-          <td>
-            <pre>
-              /* Single keyword */
-text-box-edge: auto;
-text-box-edge: text;
-
-/* Two text-edge values */
-text-box-edge: text text;
-text-box-edge: text alphabetic;
-text-box-edge: cap alphabetic;
-text-box-edge: ex text;
-
-/* Global values */
-text-box-edge: inherit;
-text-box-edge: initial;
-text-box-edge: revert;
-text-box-edge: revert-layer;
-text-box-edge: unset;
-
-            </pre>
-          </td>
-        </tr>
+        
         <tr>
           <td><a>text-box-trim</a></td>
           <td>&nbsp;</td>
@@ -4645,17 +4661,7 @@ text-box-trim: unset;
 
           </td>
         </tr>
-        <tr>
-          <td><a>text-wrap-mode</a></td>
-          <td>&nbsp;</td>
-          <td> wrap    |
-  nowrap</td>
-        </tr>
-        <tr>
-          <td><a>text-wrap-style</a></td>
-          <td>&nbsp;</td>
-          <td>&nbsp;</td>
-        </tr>
+        
         <tr>
           <td><a>transform-box</a></td>
           <td>&nbsp;</td>
