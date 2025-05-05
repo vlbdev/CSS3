@@ -18,5 +18,21 @@
 
   </pre
     >
+    <hr />
+    <style>
+      #anchor {
+        anchor-name: --myAnchor;
+        width: 15px;
+      }
+      #tooltip {
+        position-anchor: --myAnchor;
+        position: fixed;
+        position-area: right bottom;
+        /*width: anchor-size(width);*/
+        background-color: red;
+      }
+    </style>
+    <p id="anchor">anchor</p>
+    <p id="tooltip">tooltip</p>
   </body>
 </html>
