@@ -134,7 +134,7 @@ animation-composition: unset;
           </td>
         </tr>
         <tr>
-          <td rowspan="31"><span>Background</span></td>
+          <td style="background-color: rgba(0,255,0,0.2);" rowspan="14"><span>Background</span></td>
         </tr>
         <tr>
           <td><a href="https://www.w3schools.com/cssref/css3_pr_background.php">background</a></td>
@@ -170,61 +170,7 @@ animation-composition: unset;
           <td><a href="https://www.w3schools.com/cssref/pr_background-image.php">background-image</a></td>
           <td>Specifies one or more background images for an element</td>
           <td>
-            background-image: url|none|initial|inherit;
-            <table class="ws-table-all notranslate">
-              <tbody>
-                <tr>
-                  <th>Value</th>
-                  <th>Description</th>
-                </tr>
-                <tr>
-                  <td><a href="func_url.php">url()</a></td>
-                  <td>The URL to the image. To specify more than one image, separate the URLs with a comma</td>
-                </tr>
-                <tr>
-                  <td>none</td>
-                  <td>No background image will be displayed. This is default</td>
-                </tr>
-                <tr>
-                  <td><a href="func_conic-gradient.php">conic-gradient()</a></td>
-                  <td>Sets a conic gradient as the background image. Define at least two colors</td>
-                </tr>
-                <tr>
-                  <td><a href="func_linear-gradient.php">linear-gradient()</a></td>
-                  <td>Sets a linear gradient as the background image. Define at least two colors (top to bottom)</td>
-                </tr>
-                <tr>
-                  <td><a href="func_radial-gradient.php">radial-gradient()</a></td>
-                  <td>Sets a radial gradient as the background image. Define at least two colors (center to edges)</td>
-                </tr>
-                <tr>
-                  <td><a href="func_repeating-conic-gradient.php">repeating-conic-gradient()</a></td>
-                  <td>Repeats a conic gradient</td>
-                </tr>
-                <tr>
-                  <td><a href="func_repeating-linear-gradient.php">repeating-linear-gradient()</a></td>
-                  <td>Repeats a linear gradient</td>
-                </tr>
-                <tr>
-                  <td><a href="func_repeating-radial-gradient.php">repeating-radial-gradient()</a></td>
-                  <td>Repeats a radial gradient</td>
-                </tr>
-                <tr>
-                  <td>initial</td>
-                  <td>
-                    Sets this property to its default value. <a href="css_initial.php">Read about <em>initial</em></a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>inherit</td>
-                  <td>
-                    Inherits this property from its parent element.
-                    <a href="css_inherit.php">Read about <em>inherit</em></a>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <p>&nbsp;</p>
+            background-image: url|gradient|none|initial|inherit;
           </td>
         </tr>
         <tr>
@@ -235,182 +181,20 @@ animation-composition: unset;
         <tr>
           <td><a href="https://www.w3schools.com/cssref/pr_background-position.php">background-position</a></td>
           <td>Specifies the position of a background image</td>
-          <td>
-            <table class="ws-table-all notranslate">
-              <tbody>
-                <tr>
-                  <th style="width: 18%">Value</th>
-                  <th>Description</th>
-                </tr>
-                <tr>
-                  <td>
-                    left top<br />
-                    left center<br />
-                    left bottom<br />
-                    right top<br />
-                    right center<br />
-                    right bottom<br />
-                    center top<br />
-                    center center<br />
-                    center bottom
-                  </td>
-                  <td>If you only specify one keyword, the other value will be "center"</td>
-                </tr>
-                <tr>
-                  <td><i>x% y%</i></td>
-                  <td>
-                    The first value is the horizontal position and the second value is the vertical. The top left corner
-                    is 0% 0%. The right bottom corner is 100% 100%. If you only specify one value, the other value will
-                    be 50%. Default value is: 0% 0%
-                  </td>
-                </tr>
-                <tr>
-                  <td><i>xpos ypos</i></td>
-                  <td>
-                    The first value&nbsp;is the horizontal position and the second value is the vertical. The top left
-                    corner is 0 0. Units can be pixels (0px 0px) or any other <a href="css_units.php">CSS units</a>. If
-                    you only specify one value, the other value will be 50%. You can mix % and positions
-                  </td>
-                </tr>
-                <tr>
-                  <td>initial</td>
-                  <td>
-                    Sets this property to its default value. <a href="css_initial.php">Read about <em>initial</em></a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>inherit</td>
-                  <td>
-                    Inherits this property from its parent element.
-                    <a href="css_inherit.php">Read about <em>inherit</em></a>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </td>
+          <td>left|right|center top|bottom|center</td>
         </tr>
         <tr>
           <td><a href="https://www.w3schools.com/cssref/css_pr_background-position-x.php">background-position-x</a></td>
           <td>Specifies the position of a background image on x-axis</td>
           <td>
-            <table class="ws-table-all notranslate">
-              <tbody>
-                <tr>
-                  <th style="width: 18%">Value</th>
-                  <th>Description</th>
-                </tr>
-                <tr>
-                  <td>left</td>
-                  <td>Positions background left side on x-axis.</td>
-                </tr>
-                <tr>
-                  <td>right</td>
-                  <td>Positions background right side on x-axis.</td>
-                </tr>
-                <tr>
-                  <td>center</td>
-                  <td>Positions background center on x-axis.</td>
-                </tr>
-                <tr>
-                  <td><i>x%</i></td>
-                  <td>
-                    Left side is 0% on x-axis, and right side is 100%. Percentage value refers to width of background
-                    positioning area minus width of background image.
-                  </td>
-                </tr>
-                <tr>
-                  <td><i>xpos</i></td>
-                  <td>
-                    Horizontal distance from left side. Units can be pixels (0px) or any other
-                    <a href="css_units.php">CSS units</a>.
-                  </td>
-                </tr>
-                <tr>
-                  <td><i>xpos offset</i></td>
-                  <td>
-                    Two value syntax, only supported in Firefox and Safari. <br />
-                    - <i>xpos</i> is set either to "left" or "right". <br />
-                    - <i>offset</i> is horizontal distance from background image and "left" or "right" side set with
-                    <i>xpos</i>. Units can be pixels or any other <a href="css_units.php">CSS units</a>.
-                  </td>
-                </tr>
-                <tr>
-                  <td>initial</td>
-                  <td>
-                    Sets this property to its default value. <a href="css_initial.php">Read about <em>initial</em></a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>inherit</td>
-                  <td>
-                    Inherits this property from its parent element.
-                    <a href="css_inherit.php">Read about <em>inherit</em></a>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+            left|right|center|x%|xpos|xpos offset
           </td>
         </tr>
         <tr>
           <td><a href="https://www.w3schools.com/cssref/css_pr_background-position-y.php">background-position-y</a></td>
           <td>Specifies the position of a background image on y-axis</td>
           <td>
-            <table class="ws-table-all notranslate">
-              <tbody>
-                <tr>
-                  <th style="width: 18%">Value</th>
-                  <th>Description</th>
-                </tr>
-                <tr>
-                  <td>top</td>
-                  <td>Positions background top on y-axis.</td>
-                </tr>
-                <tr>
-                  <td>bottom</td>
-                  <td>Positions background bottom on y-axis.</td>
-                </tr>
-                <tr>
-                  <td>center</td>
-                  <td>Positions background center on y-axis.</td>
-                </tr>
-                <tr>
-                  <td><i>y%</i></td>
-                  <td>
-                    Top side is 0% on y-axis, and bottom side is 100%. Percentage value refers to height of background
-                    positioning area minus height of background image.
-                  </td>
-                </tr>
-                <tr>
-                  <td><i>ypos</i></td>
-                  <td>
-                    Vertical distance from top side. Units can be pixels (0px) or any other
-                    <a href="css_units.php">CSS units</a>.
-                  </td>
-                </tr>
-                <tr>
-                  <td><i>ypos offset</i></td>
-                  <td>
-                    Two value syntax, only supported in Firefox and Safari. <br />
-                    - <i>ypos</i> is set either to "top" or "bottom". <br />
-                    - <i>offset</i> is vertical distance from background image and "top" or "bottom" side set with
-                    <i>ypos</i>. Units can be pixels or any other <a href="css_units.php">CSS units</a>.
-                  </td>
-                </tr>
-                <tr>
-                  <td>initial</td>
-                  <td>
-                    Sets this property to its default value. <a href="css_initial.php">Read about <em>initial</em></a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>inherit</td>
-                  <td>
-                    Inherits this property from its parent element.
-                    <a href="css_inherit.php">Read about <em>inherit</em></a>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+             top|bottom|center|y%|ypos|ypos offset
           </td>
         </tr>
         <tr>
@@ -427,190 +211,19 @@ animation-composition: unset;
           <td><a href="https://www.w3schools.com/cssref/css3_pr_backdrop-filter.php">backdrop-filter</a></td>
           <td>Defines a graphical effect to the area behind an element</td>
           <td>
-            <table class="ws-table-all notranslate">
-              <tbody>
-                <tr>
-                  <th>Value</th>
-                  <th>Description</th>
-                </tr>
-                <tr>
-                  <td>none</td>
-                  <td>Default value. No filter is applied to the backdrop</td>
-                </tr>
-                <tr>
-                  <td><em>filter</em></td>
-                  <td>
-                    A space-separated list of filter-functions like:
-                    <ul>
-                      <li>blur()</li>
-                      <li>brightness()</li>
-                      <li>contrast()</li>
-                      <li>drop-shadow()</li>
-                      <li>grayscale()</li>
-                      <li>hue-rotate()</li>
-                      <li>invert()</li>
-                      <li>opacity()</li>
-                      <li>sepia()</li>
-                      <li>saturate()</li>
-                    </ul>
-                    <p>or an url to an SVG filter that will be applied to the backdrop</p>
-                  </td>
-                </tr>
-                <tr>
-                  <td>initial</td>
-                  <td>
-                    Sets this property to its default value. <a href="css_initial.php">Read about <em>initial</em></a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>inherit</td>
-                  <td>
-                    Inherits this property from its parent element.
-                    <a href="css_inherit.php">Read about <em>inherit</em></a>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+            blur()
+brightness()
+contrast()
+drop-shadow()
+grayscale()
+hue-rotate()
+invert()
+opacity()
+sepia()
+saturate()
           </td>
         </tr>
-        <tr>
-          <td><a href="https://www.w3schools.com/cssref/css3_pr_mask.php">mask</a></td>
-          <td>
-            A shorthand property for mask-image, mask-mode, mask-repeat, mask-position, mask-clip, mask-origin,
-            mask-size and mask-composite
-          </td>
-          <td>mask-image: mask-image mask-mode mask-repeat mask-position mask-clip mask-origin mask-size mask-composite|initial|inherit;</td>
-        </tr>
-        <tr>
-          <td><a href="https://www.w3schools.com/cssref/css3_pr_mask-clip.php">mask-clip</a></td>
-          <td>Specifies which area is affected by a mask image</td>
-          <td>mask-clip: border-box|content-box|padding-box|fill-box|stroke-box|view-box|no-clip|border|padding|content|text|initial|inherit;</td>
-        </tr>
-        <tr>
-          <td><a href="https://www.w3schools.com/cssref/css3_pr_mask-composite.php">mask-composite</a></td>
-          <td>Specifies a compositing operation used on the current mask layer with the mask layers below it</td>
-          <td>mask-composite: add|subtract|intersect|exclude|initial|inherit;</td>
-        </tr>
-        <tr>
-          <td><a href="https://www.w3schools.com/cssref/css3_pr_mask-image.php">mask-image</a></td>
-          <td>Specifies an image to be used as a mask layer for an element</td>
-          <td>mask-image: none|image|url()|initial|inherit;</td>
-        </tr>
-        <tr>
-          <td><a href="https://www.w3schools.com/cssref/css3_pr_mask-mode.php">mask-mode</a></td>
-          <td>Specifies whether the mask layer image is treated as a luminance mask or as an alpha mask</td>
-          <td>mask-mode: match-source|luminance|alpha|initial|inherit;</td>
-        </tr>
-        <tr>
-          <td><a href="https://www.w3schools.com/cssref/css3_pr_mask-origin.php">mask-origin</a></td>
-          <td>Specifies the origin position (the mask position area) of a mask layer image</td>
-          <td>mask-origin: border-box|content-box|padding-box|fill-box|stroke-box|view-box|initial|inherit;</td>
-        </tr>
-        <tr>
-          <td><a href="https://www.w3schools.com/cssref/css3_pr_mask-position.php">mask-position</a></td>
-          <td>Sets the starting position of a mask layer image (relative to the mask position area)</td>
-          <td><table class="ws-table-all notranslate">
-  <tbody><tr>
-    <th style="width:18%">Value</th>
-    <th>Description</th>
-  </tr>  
-  <tr>
-    <td>left top<br>
-      left center<br>
-      left bottom<br>
-      right top<br>
-      right center<br>
-      right bottom<br>
-      center top<br>
-      center center<br>
-      center bottom</td>
-    <td>If you only specify one keyword, the other value will be "center"</td>
-  </tr>
-  <tr>
-    <td><i>x% y%</i></td>
-    <td>The first value is the horizontal position and the second value is the 
-    vertical. The top left corner is 0% 0%. The right bottom corner is 100% 
-    100%. If you only specify one value, the other value will be 50%. Default value is: 0% 0%</td>
-  </tr>
-  <tr>
-    <td><i>xpos ypos</i></td>
-    <td>The first value&nbsp;is the horizontal position and the second
-      value is the vertical. The top left corner is 0 0. Units can be pixels
-      (0px 0px) or any other <a href="css_units.php">CSS units</a>. If you only specify one value, the other value will be 50%. You can mix % and positions</td>
-
-  </tr>
-  <tr>
-    <td>initial</td>
-    <td>Sets this property to its default value. <a href="css_initial.php">Read about <em>initial</em></a></td>
-    </tr>
-  <tr>
-    <td>inherit</td>
-    <td>Inherits this property from its parent element. <a href="css_inherit.php">Read about <em>inherit</em></a></td>
-    </tr>
-</tbody></table></td>
-        </tr>
-        <tr>
-          <td><a href="https://www.w3schools.com/cssref/css3_pr_mask-repeat.php">mask-repeat</a></td>
-          <td>Specifies how the mask layer image is repeated</td>
-          <td>mask-repeat: repeat|repeat-x|repeat-y|space|round|no-repeat|initial|inherit;</td>
-        </tr>
-        <tr>
-          <td><a href="https://www.w3schools.com/cssref/css3_pr_mask-size.php">mask-size</a></td>
-          <td>Specifies the size of a mask layer image</td>
-          <td>mask-size: auto|size|contain|cover|initial|inherit;</td>
-        </tr>
-        <tr>
-          <td><a href="https://www.w3schools.com/cssref/css3_pr_mask-type.php">mask-type</a></td>
-          <td>Specifies whether an SVG element is treated as a luminance mask or as an alpha mask</td>
-          <td>mask-type: luminance|alpha|initial|inherit;</td>
-        </tr>
-        <tr>
-          <td><a>mask-border</a></td>
-          <td>&nbsp;</td>
-          <td>mask-border: url("border-mask.png") 25 / 35px / 12px space alpha;</td>
-        </tr>
-        <tr>
-          <td><a>mask-border-mode</a></td>
-          <td>&nbsp;</td>
-          <td>
-            <pre>
-              mask-border-mode: luminance;
-mask-border-mode: alpha;
-            </pre>
-          </td>
-        </tr>
-        <tr>
-          <td><a>mask-border-outset</a></td>
-          <td>&nbsp;</td>
-          <td>length number</td>
-        </tr>
-        <tr>
-          <td><a>mask-border-repeat</a></td>
-          <td>&nbsp;</td>
-          <td>
-            <pre>
-              mask-border-repeat: stretch;
-mask-border-repeat: repeat;
-mask-border-repeat: round;
-mask-border-repeat: space;
-            </pre>
-          </td>
-        </tr>
-        <tr>
-          <td><a>mask-border-slice</a></td>
-          <td>&nbsp;</td>
-          <td>number-percentage</td>
-        </tr>
-        <tr>
-          <td><a>mask-border-source</a></td>
-          <td>&nbsp;</td>
-          <td>none image</td>
-        </tr>
-        <tr>
-          <td><a>mask-border-width</a></td>
-          <td>&nbsp;</td>
-          <td>length percentage number</td>
-        </tr>
+        
         <tr>
           <td rowspan="68"><span>Border</span></td>
         </tr>
@@ -2571,6 +2184,146 @@ will-change: unset;
 image-orientation: from-image; 
             </pre>
           </td>
+        </tr>
+        <tr>
+          <td rowspan="18"><span>Mask</span></td></tr>
+        <tr>
+          <td><a href="https://www.w3schools.com/cssref/css3_pr_mask.php">mask</a></td>
+          <td>
+            A shorthand property for mask-image, mask-mode, mask-repeat, mask-position, mask-clip, mask-origin,
+            mask-size and mask-composite
+          </td>
+          <td>mask-image: mask-image mask-mode mask-repeat mask-position mask-clip mask-origin mask-size mask-composite|initial|inherit;</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.w3schools.com/cssref/css3_pr_mask-clip.php">mask-clip</a></td>
+          <td>Specifies which area is affected by a mask image</td>
+          <td>mask-clip: border-box|content-box|padding-box|fill-box|stroke-box|view-box|no-clip|border|padding|content|text|initial|inherit;</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.w3schools.com/cssref/css3_pr_mask-composite.php">mask-composite</a></td>
+          <td>Specifies a compositing operation used on the current mask layer with the mask layers below it</td>
+          <td>mask-composite: add|subtract|intersect|exclude|initial|inherit;</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.w3schools.com/cssref/css3_pr_mask-image.php">mask-image</a></td>
+          <td>Specifies an image to be used as a mask layer for an element</td>
+          <td>mask-image: none|image|url()|initial|inherit;</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.w3schools.com/cssref/css3_pr_mask-mode.php">mask-mode</a></td>
+          <td>Specifies whether the mask layer image is treated as a luminance mask or as an alpha mask</td>
+          <td>mask-mode: match-source|luminance|alpha|initial|inherit;</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.w3schools.com/cssref/css3_pr_mask-origin.php">mask-origin</a></td>
+          <td>Specifies the origin position (the mask position area) of a mask layer image</td>
+          <td>mask-origin: border-box|content-box|padding-box|fill-box|stroke-box|view-box|initial|inherit;</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.w3schools.com/cssref/css3_pr_mask-position.php">mask-position</a></td>
+          <td>Sets the starting position of a mask layer image (relative to the mask position area)</td>
+          <td><table class="ws-table-all notranslate">
+  <tbody><tr>
+    <th style="width:18%">Value</th>
+    <th>Description</th>
+  </tr>  
+  <tr>
+    <td>left top<br>
+      left center<br>
+      left bottom<br>
+      right top<br>
+      right center<br>
+      right bottom<br>
+      center top<br>
+      center center<br>
+      center bottom</td>
+    <td>If you only specify one keyword, the other value will be "center"</td>
+  </tr>
+  <tr>
+    <td><i>x% y%</i></td>
+    <td>The first value is the horizontal position and the second value is the 
+    vertical. The top left corner is 0% 0%. The right bottom corner is 100% 
+    100%. If you only specify one value, the other value will be 50%. Default value is: 0% 0%</td>
+  </tr>
+  <tr>
+    <td><i>xpos ypos</i></td>
+    <td>The first value&nbsp;is the horizontal position and the second
+      value is the vertical. The top left corner is 0 0. Units can be pixels
+      (0px 0px) or any other <a href="css_units.php">CSS units</a>. If you only specify one value, the other value will be 50%. You can mix % and positions</td>
+
+  </tr>
+  <tr>
+    <td>initial</td>
+    <td>Sets this property to its default value. <a href="css_initial.php">Read about <em>initial</em></a></td>
+    </tr>
+  <tr>
+    <td>inherit</td>
+    <td>Inherits this property from its parent element. <a href="css_inherit.php">Read about <em>inherit</em></a></td>
+    </tr>
+</tbody></table></td>
+        </tr>
+        <tr>
+          <td><a href="https://www.w3schools.com/cssref/css3_pr_mask-repeat.php">mask-repeat</a></td>
+          <td>Specifies how the mask layer image is repeated</td>
+          <td>mask-repeat: repeat|repeat-x|repeat-y|space|round|no-repeat|initial|inherit;</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.w3schools.com/cssref/css3_pr_mask-size.php">mask-size</a></td>
+          <td>Specifies the size of a mask layer image</td>
+          <td>mask-size: auto|size|contain|cover|initial|inherit;</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.w3schools.com/cssref/css3_pr_mask-type.php">mask-type</a></td>
+          <td>Specifies whether an SVG element is treated as a luminance mask or as an alpha mask</td>
+          <td>mask-type: luminance|alpha|initial|inherit;</td>
+        </tr>
+        <tr>
+          <td><a>mask-border</a></td>
+          <td>&nbsp;</td>
+          <td>mask-border: url("border-mask.png") 25 / 35px / 12px space alpha;</td>
+        </tr>
+        <tr>
+          <td><a>mask-border-mode</a></td>
+          <td>&nbsp;</td>
+          <td>
+            <pre>
+              mask-border-mode: luminance;
+mask-border-mode: alpha;
+            </pre>
+          </td>
+        </tr>
+        <tr>
+          <td><a>mask-border-outset</a></td>
+          <td>&nbsp;</td>
+          <td>length number</td>
+        </tr>
+        <tr>
+          <td><a>mask-border-repeat</a></td>
+          <td>&nbsp;</td>
+          <td>
+            <pre>
+              mask-border-repeat: stretch;
+mask-border-repeat: repeat;
+mask-border-repeat: round;
+mask-border-repeat: space;
+            </pre>
+          </td>
+        </tr>
+        <tr>
+          <td><a>mask-border-slice</a></td>
+          <td>&nbsp;</td>
+          <td>number-percentage</td>
+        </tr>
+        <tr>
+          <td><a>mask-border-source</a></td>
+          <td>&nbsp;</td>
+          <td>none image</td>
+        </tr>
+        <tr>
+          <td><a>mask-border-width</a></td>
+          <td>&nbsp;</td>
+          <td>length percentage number</td>
         </tr>
         <tr>
           <td rowspan="9"><span>Overflow</span></td>
