@@ -60,6 +60,15 @@ color-scheme
   <span style="zoom: 500%;">5</span>
   <span style="zoom: 600%;">6</span>
   <h2>pointer-events</h2>
+  <style>
+    .pointers{display: inline-block;width: 100px;height: 100px;}
+    .nopointer{pointer-events: none}
+    .one{background-color: burlywood;}
+    .two{background-color: lavenderblush;}
+    .one:hover,.two:hover{background-color: blueviolet;}
+  </style>
+  <div class="one pointers"></div>
+  <div class="two pointers nopointer"></div>
   <h2>widows</h2>
   <h2>orphans</h2>
   <h2>color-scheme</h2>
