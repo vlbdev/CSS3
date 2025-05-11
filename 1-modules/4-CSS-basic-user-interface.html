@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <h2>
-    Properties
-  </h2>
-  <pre>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Properties</h2>
+    <pre>
 accent-color
 appearance
 caret, shorthand for:
@@ -30,9 +28,10 @@ outline-offset
 pointer-events
 resize
 user-select
-  </pre>
-  <h2>My Properties</h2>
-  <pre>
+  </pre
+    >
+    <h2>My Properties</h2>
+    <pre>
 cursor
 user-select
 touch-action
@@ -41,36 +40,54 @@ pointer-events
 widows
 orphans
 color-scheme
-  </pre>
-  <h2>user-select</h2>
-  <p style="user-select: none;">
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam quos fugiat quae! Culpa pariatur cumque assumenda expedita ducimus dignissimos doloremque aliquid eum hic veritatis velit, saepe provident tenetur laborum in!
-  </p>
-  <h2>touch-action</h2>
-  <div style="height: 100px;overflow: auto;touch-action: none;">
-    <div style="height: 1000px;background-image: linear-gradient(white, purple);">
-
+  </pre
+    >
+    <h2>user-select</h2>
+    <p style="user-select: none">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam quos fugiat quae! Culpa pariatur cumque assumenda
+      expedita ducimus dignissimos doloremque aliquid eum hic veritatis velit, saepe provident tenetur laborum in!
+    </p>
+    <h2>touch-action</h2>
+    <div style="height: 100px; overflow: auto; touch-action: none">
+      <div style="height: 1000px; background-image: linear-gradient(white, purple)"></div>
     </div>
-  </div>
-  <h2>zoom</h2>
-  <span style="zoom: normal;">1</span>
-  <span style="zoom: 200%;">2</span>
-  <span style="zoom: 300%;">3</span>
-  <span style="zoom: 400%;">4</span>
-  <span style="zoom: 500%;">5</span>
-  <span style="zoom: 600%;">6</span>
-  <h2>pointer-events</h2>
-  <style>
-    .pointers{display: inline-block;width: 100px;height: 100px;}
-    .nopointer{pointer-events: none}
-    .one{background-color: burlywood;}
-    .two{background-color: lavenderblush;}
-    .one:hover,.two:hover{background-color: blueviolet;}
-  </style>
-  <div class="one pointers"></div>
-  <div class="two pointers nopointer"></div>
-  <h2>widows</h2>
-  <h2>orphans</h2>
-  <h2>color-scheme</h2>
-</body>
+    <h2>zoom</h2>
+    <span style="zoom: normal">1</span>
+    <span style="zoom: 200%">2</span>
+    <span style="zoom: 300%">3</span>
+    <span style="zoom: 400%">4</span>
+    <span style="zoom: 500%">5</span>
+    <span style="zoom: 600%">6</span>
+    <h2>pointer-events</h2>
+    <style>
+      .pointers {
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+      }
+      .nopointer {
+        pointer-events: none;
+      }
+      .one {
+        background-color: burlywood;
+      }
+      .two {
+        background-color: lavenderblush;
+      }
+      .one:hover,
+      .two:hover {
+        background-color: blueviolet;
+      }
+    </style>
+    <div class="one pointers"></div>
+    <div class="two pointers nopointer"></div>
+    <h2>widows</h2>
+    <h2>orphans</h2>
+    <h2>color-scheme</h2>
+    <style>
+      * {
+        color-scheme: dark;
+      }
+    </style>
+  </body>
 </html>
