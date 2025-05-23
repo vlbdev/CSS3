@@ -8,8 +8,19 @@
 
     <style>
       *{scroll-behavior: smooth;}
+      nav.nav {
+        position: sticky;
+        top: 0;
+        background-color: aquamarine;
+        z-index: 1;
+        margin-left: 120px;
+        padding: 5px 0;
+        
+      }
       nav ul {
         display: flex;
+        flex-wrap: wrap;
+        
         list-style-type: none;
         gap: 30px;
       }
@@ -29,6 +40,7 @@
   <body>
     <nav>
       <ul>
+        
         <li><a href="https://vlbdev.github.io/CSS3/selectors.html" target="_self">Selectors</a></li>
         <li><a href="https://vlbdev.github.io/CSS3/pseudo-classes.html" target="_self">Pseudo-classes</a></li>
         <li><a href="https://vlbdev.github.io/CSS3/pseudo-elements.html" target="_self">Pseudo-elements</a></li>
@@ -40,8 +52,9 @@
       </ul>
     </nav>
     <hr>
-    <nav>
+    <nav class="nav">
       <ul>
+        <li><a target="_self" href="#top">Top</a></li>
         <li><a target="_self" href="#Background">Background</a></li>
         <li><a target="_self" href="#Border">Border</a></li>
         <li><a target="_self" href="#Boxmodel">Box model</a></li>
@@ -173,7 +186,12 @@ animation-composition: unset;
           </td>
         </tr>
         <tr>
-          <td id="Background" style="background-color: rgba(0,255,0,0.2);" rowspan="14"><span>Background</span></td>
+          <td id="Background" style="background-color: rgba(0,255,0,0.2);" rowspan="14"><span>Background
+          <br>
+            <a target="_self" href="dsds">dsds</a>
+          </span>
+          </td>
+
         </tr>
         <tr>
           <td><a href="https://www.w3schools.com/cssref/css3_pr_background.php">background</a></td>
